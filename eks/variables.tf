@@ -35,7 +35,7 @@ variable "endpoint_private_access"{
   default = true
 }
 variable "endpoint_public_access"{
-  default = ["private"]
+  default = false
 }
 variable "ondemand_instance_types" {
   default = ["t3a.medium"]
@@ -55,6 +55,7 @@ variable "addons" {
   }))
 
 }
+
 
 
 
