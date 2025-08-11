@@ -1,4 +1,4 @@
-nsenv                   = "dev"
+env                   = "dev"
 aws-region            = "us-east-1"
 vpc-cidr-block        = "10.0.0.0/16"
 vpc-name              = "jenkins-vpc"
@@ -51,3 +51,4 @@ addons = [
   # Add more addons as needed
 
 ]
+
