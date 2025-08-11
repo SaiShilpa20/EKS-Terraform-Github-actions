@@ -31,8 +31,12 @@ variable "eks-sg" {}
 # EKS
 variable "is-eks-cluster-enabled" {}
 variable "cluster-version" {}
-variable "endpoint_private_access"{}
-variable "endpoint_public_access"{}
+variable "endpoint_private_access"{
+  default = true
+}
+variable "endpoint_public_access"{
+  default = ["private"]
+}
 variable "ondemand_instance_types" {
   default = ["t3a.medium"]
 }
@@ -51,6 +55,7 @@ variable "addons" {
   }))
 
 }
+
 
 
 
