@@ -1,6 +1,5 @@
 env                   = "dev"
 aws-region            = "us-east-1"
-cluster-name          = "my-eks-cluster"
 vpc-cidr-block        = "10.16.0.0/16"
 vpc-name              = "jenkins-vpc"
 igw-name              = "jenkins-igw"
@@ -52,6 +51,7 @@ addons = [
   # Add more addons as needed
 
 ]
+
 
 
 
