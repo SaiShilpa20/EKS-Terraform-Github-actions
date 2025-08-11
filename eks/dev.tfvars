@@ -21,8 +21,8 @@ eks-sg                = "eks-sg"
 is-eks-cluster-enabled     = true
 cluster-version            = "1.33"
 cluster-name               = "eks-cluster"
-endpoint_private_access    = true
-endpoint_public_access     = "private"
+endpoint-private-access    = true
+endpoint-public-access     = "private"
 ondemand_instance_types    = ["t3a.medium"]
 spot_instance_types        = ["c5a.large", "c5a.xlarge", "m5a.large", "m5a.xlarge", "c5.large", "m5.large", "t3a.large", "t3a.xlarge", "t3a.medium"]
 desired_capacity_on_demand = "1"
@@ -51,6 +51,7 @@ addons = [
   # Add more addons as needed
 
 ]
+
 
 
 
