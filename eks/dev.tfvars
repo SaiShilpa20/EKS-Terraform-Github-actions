@@ -1,10 +1,10 @@
-env                   = "dev"
+nsenv                   = "dev"
 aws-region            = "us-east-1"
-vpc-cidr-block        = "10.16.0.0/16"
-vpc-name              = "vpc"
-igw-name              = "igw"
+vpc-cidr-block        = "10.0.0.0/16"
+vpc-name              = "jenkins-vpc"
+igw-name              = "jenkins-igw"
 pub-subnet-count      = 3
-pub-cidr-block        = ["10.16.0.0/20", "10.16.16.0/20", "10.16.32.0/20"]
+pub-cidr-block        = ["10.0.0.0/20", "10.0.16.0/20", "10.0.32.0/20"]
 pub-availability-zone = ["us-east-1a", "us-east-1b", "us-east-1c"]
 pub-sub-name          = "subnet-public"
 pri-subnet-count      = 3
@@ -49,4 +49,5 @@ addons = [
     version = "v1.46.0-eksbuild.1"
   }
   # Add more addons as needed
+
 ]
