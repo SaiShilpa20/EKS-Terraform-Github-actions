@@ -31,15 +31,8 @@ variable "eks-sg" {}
 # EKS
 variable "is-eks-cluster-enabled" {}
 variable "cluster-version" {}
-variable "endpoint_private_access" {
-  type = bool
-  description = "Whether the Amazon EKS private API server endpoint is enabled"
-}
-variable "endpoint_public_access" {
-  type = bool
-  description = "Whether the Amazon EKS public API server endpoint is enabled"
-}
-
+variable "endpoint_private_access" {}
+variable "endpoint_public_access"{}
 variable "ondemand_instance_types" {
   default = ["t3a.medium"]
 }
@@ -58,4 +51,5 @@ variable "addons" {
   }))
 
 }
+
 
