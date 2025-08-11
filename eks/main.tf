@@ -37,11 +37,12 @@ module "eks" {
   max_capacity_spot             = var.max_capacity_spot
   is-eks-cluster-enabled        = var.is-eks-cluster-enabled
   cluster-version               = var.cluster-version
-  endpoint-private-access       = var.endpoint_private_access
-  endpoint-public-access        = var.endpoint_public_access
+  endpoint_private_access       = var.endpoint_private_access
+  endpoint_public_access        = var.endpoint_public_access
 
   addons = var.addons
 
 }
+
 
 
