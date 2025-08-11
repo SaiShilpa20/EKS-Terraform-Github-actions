@@ -15,7 +15,7 @@ variable "pub-availability-zone" {
 variable "pub-sub-name" {}
 variable "pri-subnet-count" {}
 variable "pri-cidr-block" {
-  type = bool
+  type = list(string)
 }
 variable "pri-availability-zone" {
   type = list(string)
@@ -32,7 +32,7 @@ variable "eks-sg" {}
 variable "is-eks-cluster-enabled" {}
 variable "cluster-version" {}
 variable "endpoint_private_access"{
-   type = list(string)
+   type = bool
 }
 variable "endpoint_public_access"{
    type = list(string)
@@ -55,6 +55,7 @@ variable "addons" {
   }))
 
 }
+
 
 
 
